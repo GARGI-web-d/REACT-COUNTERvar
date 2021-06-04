@@ -1,0 +1,15 @@
+.B1 button {
+    padding: 2px 2px;
+    border-color: blue;
+    background-color: cornflowerblue;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.B2 button {
+    padding: 2px 2px;
+    border-color: seagreen;
+    background-color: palegreen;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
