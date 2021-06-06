@@ -28,7 +28,7 @@ var Increment = React.createClass({
       Increment (+)
       </button>
       </div>
-      <div class="B1">
+      <div class="B2">
       <button onClick = {this.decrement}>
       Decrement (-)
       </button>
