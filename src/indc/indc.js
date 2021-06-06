@@ -2,21 +2,38 @@ import React, { useState } from 'react';
 import './indc.css';
 
 
-function Example() {
-  const [count, setState] = useState(0);
+var Increment = React.createClass({
+  getInitialState: function() {
+    return {
+      counter: 0
+    };
+  },
 
-  return (
-    <div>
+  increment: function() {
+    this.setState({
+      counter: this.state.counter + 1
+    });
+  },
+  
+  decrement: function(){
+    this.setState({
+      counter: this.state.counter - 1
+    });
+  },
+
+  render: function() {
+    return <div> 
       <div class="B1">
-      <button onClick={() => setState(count + 1)}>
-      Increment by 1
+      <button onClick = {this.increment}>
+      Increment (+)
       </button>
       </div>
       <div class="B1">
-      <button onClick={() => setState(count - 1)}>
-      Decrement by 1
+      <button onClick = {this.decrement}>
+      Decrement (-)
       </button>
-      </div>
-    </div>
-  );
-}
+     </div>
+  }
+});
+
+React.render(<Increment />, document.getElementById('mount'))
